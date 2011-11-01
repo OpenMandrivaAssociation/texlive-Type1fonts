@@ -3,7 +3,7 @@ Version:	2.14
 Release:	1
 Summary:	Font installation guide
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive//info/Type1fonts/fontinstallationguide
+URL:		http://www.ctan.org/tex-archive/info/Type1fonts/fontinstallationguide
 License:	FDL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/Type1fonts.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/Type1fonts.doc.tar.xz
