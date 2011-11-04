@@ -1,3 +1,9 @@
+# revision 19603
+# category Package
+# catalog-ctan /info/Type1fonts/fontinstallationguide
+# catalog-date 2010-08-29 15:39:11 +0200
+# catalog-license fdl
+# catalog-version 2.14
 Name:		texlive-Type1fonts
 Version:	2.14
 Release:	1
@@ -27,6 +33,7 @@ all the pieces together. This is what this guide is about.
 %doc %{_texmfdistdir}/doc/fonts/Type1fonts/examples.zip
 %doc %{_texmfdistdir}/doc/fonts/Type1fonts/fontinstallationguide.pdf
 %doc %{_texmfdistdir}/doc/fonts/Type1fonts/fontinstallationguide.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -37,3 +44,5 @@ all the pieces together. This is what this guide is about.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
