@@ -16,8 +16,6 @@ Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/Type1fonts.doc.ta
 BuildArch:	noarch
 BuildRequires:	texlive-tlpkg
 Requires(pre):	texlive-tlpkg
-Conflicts:	texlive-texmf <= 20110705-3
-Conflicts:	texlive-doc <= 20110705-3
 
 %description
 This guide discusses the most common scenarios you are likely
@@ -33,7 +31,6 @@ all the pieces together. This is what this guide is about.
 %doc %{_texmfdistdir}/doc/fonts/Type1fonts/examples.zip
 %doc %{_texmfdistdir}/doc/fonts/Type1fonts/fontinstallationguide.pdf
 %doc %{_texmfdistdir}/doc/fonts/Type1fonts/fontinstallationguide.tex
-%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -44,5 +41,3 @@ all the pieces together. This is what this guide is about.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
-mkdir -p %{buildroot}%{_tlpkgobjdir}
-cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
