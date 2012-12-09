@@ -41,3 +41,18 @@ all the pieces together. This is what this guide is about.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar doc %{buildroot}%{_texmfdistdir}
+
+
+%changelog
+* Thu Jan 05 2012 Paulo Andrade <pcpa@mandriva.com.br> 2.14-2
++ Revision: 757166
+- Rebuild to reduce used resources
+
+* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 2.14-1
++ Revision: 719825
+- texlive-Type1fonts
+- texlive-Type1fonts
+- texlive-Type1fonts
+- texlive-Type1fonts
+- texlive-Type1fonts
+
