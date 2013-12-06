@@ -6,7 +6,7 @@
 # catalog-version 2.14
 Name:		texlive-Type1fonts
 Version:	2.14
-Release:	2
+Release:	3
 Summary:	Font installation guide
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/info/Type1fonts/fontinstallationguide
